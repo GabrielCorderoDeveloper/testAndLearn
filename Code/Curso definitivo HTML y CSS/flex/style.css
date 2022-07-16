@@ -1,0 +1,45 @@
+:root {
+    --negro: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    border:  0.3rem solid var(--negro);
+    display: flex;
+    height: 50vh;
+    align-items: baseline;
+  
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+.box1 {
+    background-color: antiquewhite;
+}
+.box2 {
+    background-color: rgb(198, 112, 0);
+}
+.box3 {
+    background-color: rgb(115, 194, 24);
+}
+.box4 {
+    background-color: rgb(92, 58, 194);
+}
+.box5 {
+    background-color: rgb(182, 50, 50);
+}
+.box6 {
+    background-color: rgb(48, 191, 226);
+}
