@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas</title>
+</head>
+<body>
+    <form action="">
+    <label for="nombre">
+    <span>Cual es tu nombre?</span>
+    <input type="text" id="nombre" name="nombre" placeholder="tu nombre" 
+    autocomplete="name" required/>
+    </label>
+    &nbsp;&nbsp;
+
+        <label for="fecha">
+        <span>Fecha</span>
+        <input type="date" name="fecha" id="fecha"/>
+        </label>
+        &nbsp;&nbsp;
+
+            <label for="horario">
+            <span>Hora?</span>
+            <input type="time" name="horario" id="horario"/>
+            </label>
+            &nbsp;&nbsp;
+
+                <label for="curso">
+                <span>Curso 1</span>
+                <select name="curso" id="curso" required>
+                <option value="CSS"> CSS </option>
+                <option value="JavaScrip"> JavaScrip </option>
+                <option value="HTML"> HTML </option>
+                <option value="C++"> C++ </option>
+                <option value="Python"> Python </option>
+                </label>
+                &nbsp;&nbsp;
+
+
+                <label for="cursos">
+                <span>Curso 2</span>
+                <input list="cursos">
+                <datalist id="cursos">
+                    <option value="CSS"></option>
+                    <option value="JavaScrip"></option>
+                    <option value="HTML"></option>
+                    <option value="C++"></option>
+                    <option value="Python"></option>
+                </datalist>
+
+
+                <input type="submit" /> 
+    </form>
+</body>
+</html>
