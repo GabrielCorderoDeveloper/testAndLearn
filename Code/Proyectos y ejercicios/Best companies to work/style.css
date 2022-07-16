@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 header{
     font-size: 3rem;
     background-color: rgb(98, 109, 109);
@@ -20,7 +19,7 @@ header{
     float: right;
     font-style: italic;
     margin-left: 0.8%;
-    margin-top: 0.8%;
+    margin-top: 1%;
     text-decoration: none;
     color: rgb(203, 203, 203);
     font-weight: bold;
@@ -29,6 +28,89 @@ header{
     color: rgb(220, 216, 144);
 }
 
+.preview{
+    margin-top: 2.3rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    max-width: 100vw;
+}
+.preview span{
+    text-decoration: underline;
+    font-size: 3rem;
+}
+/* <<<<<<<<<<<<<Card elements>>>>>>>>>>>>>> */
+.cards{
+    text-decoration: none;
+    margin-top: 4rem;
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    place-items: center;
+}
+#tittle{
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+#tittle2{
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+}
+.card{
+box-shadow: 0 0 10px 3px rgb(130, 130, 130);
+width: 250px;
+transition-duration: 0.8s;
+}
+.card > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.card > p{
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    background-color: white;
+}
+.card:hover {
+width: 285px;
+}
+.card:hover > p {
+font-size: 1.69rem;
+}
+
+
+.meta{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(60, 170, 228);
+}
+.google{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(228, 108, 60);
+}
+.microsoft{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(113, 228, 60);
+}
+.apple{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(206, 206, 206);
+}
+.amazon{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgb(187, 177, 150);
+}
+
+
+
+
 main{
-    height: 2000px;
+    text-align: center;
 }
