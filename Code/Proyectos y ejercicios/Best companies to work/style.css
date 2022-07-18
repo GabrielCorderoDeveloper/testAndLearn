@@ -94,27 +94,27 @@ font-size: 1.69rem;
     align-items: center;
 }
 .meta{
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 5rem;
     background-color: rgb(60, 170, 228);
 }
 .google{
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 5rem;
     background-color: rgb(228, 108, 60);
 }
 .microsoft{
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 5rem;
     background-color: rgb(113, 228, 60);
 }
 .apple{
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 5rem;
     background-color: rgb(206, 206, 206);
 }
 .amazon{
-    padding-top: 5rem;
+    padding-top: 7.5rem;
     padding-bottom: 5rem;
     background-color: rgb(187, 177, 150);
 }
@@ -122,7 +122,7 @@ font-size: 1.69rem;
 /* <<<<<<<<<<<<<<<<<Images slider>>>>>>>>>>>>>>>>>>>> */
 .img-slider{
     position: relative;
-    width: 1200px;
+    width: 1100px;
     height: 400px;
     margin: 10px;
     background-color: rgb(60, 170, 228);
@@ -132,33 +132,36 @@ font-size: 1.69rem;
     height: 600px;
   }
 
-  .img-slider .slide{
+  .img-slider .slide, .slide2, .slide3, .slide4, .slide5{
     z-index: 1;
     position: absolute;
     width: 100%;
     clip-path: circle(0% at 0 50%);
   }
 
-  .img-slider .slide.active{
+  .img-slider .slide.active, .slide2.active2, .slide3.active3, .slide4.active4
+  , .slide5.active5{
     clip-path: circle(150% at 0 50%);
     transition: 2s;
     transition-property: clip-path;
   }
 
 
-  .img-slider .slide img{
+  .img-slider .slide img, .slide2 img, .slide3 img, .slide4 img, .slide5 img{
     z-index: 1;
     width: 100%;
     border-radius: 15px;
   }
 
-  .img-slider .slide .info{
+  .img-slider .slide .info, .slide2 .info, .slide3 .info, .slide4 .info
+  , .slide5 .info{
     position: absolute;
     top: 0;
     padding: 15px 30px;
   }
 
-  .img-slider .slide .info h2{
+  .img-slider .slide .info h2, .slide2 .info h2, .slide3 .info h2, .slide4 .info h2
+  , .slide5 .info h2{
     color: #fff;
     font-size: 45px;
     text-transform: uppercase;
@@ -166,7 +169,8 @@ font-size: 1.69rem;
     letter-spacing: 2px;
   }
 
-  .img-slider .slide .info p{
+  .img-slider .slide .info p, .slide2 .info p, .slide3 .info p, .slide4 .info p
+  , .slide5 .info p{
     color: #fff;
     background: rgba(0, 0, 0, 0.1);
     font-size: 16px;
@@ -184,7 +188,7 @@ font-size: 1.69rem;
     transform: translateX(-50%);
   }
 
-  .img-slider .navigation .btn{
+  .img-slider .navigation .btn, .btn2, .btn3, .btn4, .btn5{
     background: rgba(255, 255, 255, 0.5);
     width: 12px;
     height: 12px;
@@ -193,7 +197,8 @@ font-size: 1.69rem;
     cursor: pointer;
   }
   
-  .img-slider .navigation .btn.active{
+  .img-slider .navigation .btn.active , .btn2.active2, .btn3.active3
+  , .btn4.active4, .btn5.active5{
     background: #2696E9;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
