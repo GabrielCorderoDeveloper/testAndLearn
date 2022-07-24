@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.c1,.c2,.c3,.c4,.c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+    margin: 1%;
+    border-radius: 20px;
+    border: solid rgb(77, 77, 77) 5px;
+}
+.c1{
+    background-color: rgb(201, 67, 198);
+}
+.c2{
+    background-color: rgb(34, 255, 34);
+}
+.c3{
+    background-color: rgb(17, 156, 255);
+}
+.c4{
+    background-color: rgb(72, 243, 255);
+}
+.c5{
+    background-color: rgb(154, 235, 255);
+}
+
+@media (min-width: 600px) {
+    .c1{
+        width: 48%;
+        order: 1;
+    }
+    .c2{
+        width: 48%;
+        order: 2;
+    }
+    .c3{
+        width: 100%;
+        order: 3;
+    }
+    .c4{
+        width: 100%;
+        order: 4;
+    }
+    .c5{
+        width: 100%;
+        order: 5;
+    }
+}
+
+@media (min-width: 800px) {
+    .c1{
+        width: 28%;
+    }
+    .c2{
+        width: 38%;
+    }
+    .c3{
+        width: 28%;
+    }
+    .c4{
+        width: 48%;
+    }
+    .c5{
+        width: 48%;
+    }
+}
