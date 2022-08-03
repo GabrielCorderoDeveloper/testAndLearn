@@ -225,3 +225,148 @@ main {
     margin-left: 10px;
 }
 
+.currency_table__date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft_orange);
+    border-radius: 8px;
+}
+.currency_table__date2 {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft_blue);
+    border-radius: 8px;
+}
+.currency_table__date  p{
+    margin-top: 7px;
+    font-size: 1.2rem;
+    line-height:1.5px;
+    color: var(--warm_black);
+    font-weight: 300;
+}
+.currency_table__date2  p{
+    margin-top: 7px;
+    font-size: 1.2rem;
+    line-height:1.5px;
+    color: var(--warm_black);
+    font-weight: 300;
+}
+
+.main_product_detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm_black);
+}
+
+.papa_logo{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url(./Assets/Icons/logo.svg);
+    background-repeat: no-repeat;
+}
+
+.product_detail_title{
+width: 90%;
+min-width: 288px;
+height: auto;
+margin: 0 auto;
+margin-top: 50px;
+text-align: center;
+}
+
+.product_detail_title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just_white);
+}
+
+.product_detail_title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product_detail_card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm_black_2);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba( 0, 0 , 0, 0.16);
+}
+
+.product_detail_card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./Assets/Icons/clock.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product_detail_card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./Assets/Icons/eye.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product_detail_card .cash {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./Assets/Icons/dollar_sign.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product_detail_card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./Assets/Icons/check_circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.product_card_title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just_white);
+}
+
+.product_card_body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
