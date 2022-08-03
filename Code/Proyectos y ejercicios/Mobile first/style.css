@@ -28,6 +28,7 @@ header{
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
 header img {
@@ -42,5 +43,185 @@ header img {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 50px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
 }
+
+.header_title_container h1{
+font-size: 2.4rem;
+font-weight: bold;
+line-height: 2.6rem;
+color: var(--just_white);
+}
+
+.header_title_container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft_orange);
+}
+
+.header_title_container .header_button{
+position: absolute;
+left: calc(50% - 118px);
+top: 270px;
+display: block;
+margin-top: 35px;
+padding: 15px;
+width: 229px;
+height: 48px;
+background-color: var(--off_white);
+
+box-shadow: 0px 4px 8px rgba(89, 73, 30 , 0.16);
+border: none;
+border-radius: 5px;
+font-size: 1.4rem;
+font-weight: bold;
+text-decoration: none;
+color: var(--black);
+}
+
+.header_button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./Assets/Icons/down.svg");
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off_white);
+}
+
+.main_exchange_container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main_exchange_container_title {
+    width: 100%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main_exchange_container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(./Assets/Icons/bitcoin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main_exchange_container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main_exchange_container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main_currency_table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    /* height: 360px; */
+    margin: 0 auto;
+    font-family: "Inter" ,sans-serif;
+}
+
+.main_currency_table .currency_table_title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin_orange);
+}
+
+.main_currency_table .currency_table_title2{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary_blue);
+}
+
+.currency_table_container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px ;
+    margin: 0 auto;
+}
+
+.currency_table_container table{
+    width: 100%;
+    height: 100%;
+}
+
+.currency_table_container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--cool_grey);
+    background-color: var(--just_white);
+}
+
+.currency_table_container .table__top_left{
+    border-radius: 15px 0 0 0 ;
+}
+.currency_table_container .table__top_right{
+    border-radius: 0 15px 0 0 ;
+}
+.currency_table_container .table__bottom_left{
+    border-radius:  0 0 0 15px ;
+}
+.currency_table_container .table__bottom_right{
+    border-radius: 0 0 15px 0 ;
+}
+
+.currency_table_container .table__right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.currency_table_container .down{
+    display: inline-block;
+    background-image: url(./Assets/Icons/trending_down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+.currency_table_container .up{
+    display: inline-block;
+    background-image: url(./Assets/Icons/trending_up.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+}
+
