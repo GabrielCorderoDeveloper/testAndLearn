@@ -390,3 +390,16 @@ text-align: center;
    text-align: center;   
 }
 
+.main_plans_container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+plans_title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
