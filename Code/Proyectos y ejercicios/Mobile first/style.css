@@ -397,9 +397,26 @@ text-align: center;
     text-align: center;
 }
 
-plans_title{
+.plans_title{
     width: 90%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans_title h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans_title p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
 }
