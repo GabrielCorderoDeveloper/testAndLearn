@@ -423,15 +423,17 @@ text-align: center;
 
 .plans_container_card{
     position: relative;
-    width: 70%;
+    scroll-snap-align: center;
+    width: 50%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--just_white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    
 }
 
 .recomended {
@@ -449,15 +451,15 @@ text-align: center;
 }
 
 .plan_card_title {
-    padding-top: 30;
+    padding-top: 30px;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.8rem;
     color: black;
 }
 
 .plan_card_price {
-    padding: 5px 0;
+    padding: 10px 0;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5.3rem;
@@ -468,12 +470,78 @@ text-align: center;
     font-size: 1.2rem;
     font-weight: 300;
     position: absolute;
-    top: 38px;
-    left: 105px;
+    top: 50px;
+    left: calc(32%);
 }
 
 .plan_card_saving {
     font-size: 1.2rem;
     color: #757575;
+}
 
+.plan_card_ca{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin_orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan_card_ca span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./Assets/Icons/right.svg);
+    vertical-align: text-bottom;
+}
+
+.plans_container_slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain ;
+    scroll-snap-type: x proximity;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin_orange);
+}
+
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+footer .right{
+    margin: 10px 0;
+}
+
+footer .left a{
+    text-decoration: none;
+    color: var(--just_white);
+}
+
+footer img{
+    width: 50%;
+    height: 50%;
+}
+
+footer li{
+    list-style-type: none;
 }
