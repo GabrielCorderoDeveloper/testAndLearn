@@ -1,0 +1,28 @@
+/* .container {
+    border: 5px solid pink;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-rows: 100px 250px;
+    row-gap: 15px;
+    column-gap: 30px;
+}
+
+.item {
+    border: 5px solid aqua;
+    font-size: 4rem;
+} */
+
+.container {
+    border: 5px solid pink;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 15px;
+}
+
+.item {
+    border: 5px solid aqua;
+    font-size: 4rem;
+}
