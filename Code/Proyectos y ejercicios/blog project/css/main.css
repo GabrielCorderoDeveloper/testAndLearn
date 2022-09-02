@@ -29,7 +29,7 @@ header .header-icons-container {
 }
 
 header .header-icons-container .icons {
-    width: 300px;
+    width: 100px;
     height: auto;
     display: flex;
     justify-items: flex-end;
@@ -39,11 +39,32 @@ header .header-icons-container .icons {
     margin-right: 50px;
 }
 
-span .linkedin {
-    background-image: url("assets/icons/linkedin.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 20px;
-    height: 20px;
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+
+}
+
+nav .nav-logo-conatainer {
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
 }
