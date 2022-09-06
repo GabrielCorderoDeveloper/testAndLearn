@@ -110,7 +110,14 @@ nav .profile-link a{
     align-items: center;
     border-radius: 5px;
     border: 0px;
+    transition: 0.4s;
 }
+
+.home-main-button:hover{
+    background-color: rgb(174, 255, 248);
+    transition: 0.4s;
+}
+
 
 .home-main-button a {
     font-weight: 700;
