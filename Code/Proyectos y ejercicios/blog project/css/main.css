@@ -137,7 +137,7 @@ nav .profile-link a{
 
 .blogs-main-new {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.6fr 1.2fr;
     grid-template-rows: 2fr;
 }
 
@@ -146,7 +146,7 @@ nav .profile-link a{
 }
 
 .blogs-news-img-container img {
-width: 85%;
+width: 90%;
 }
 
 .blogs-news-info-container {
@@ -165,4 +165,10 @@ width: 85%;
     border-bottom: 1px solid rgb(121, 130, 136);
     padding-bottom: 20px;
     text-align: center;
+}
+
+.blogs-button{
+    border: 2px solid rgb(30, 235, 136);
+    padding: 10px 15px;
+    font-size: 12px;
 }
