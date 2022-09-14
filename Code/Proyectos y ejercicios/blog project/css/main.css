@@ -29,7 +29,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background-color: cyan;
+    background-color: #47cfac;
 }
 
 header .header-icons-container .icons {
@@ -186,4 +186,17 @@ width: 90%;
 
 .blogs-posts-container .post-container img {
     width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
+}
+
+footer p{
+    color: white;
+    margin-top: 30px;
+    text-align: center;
 }
