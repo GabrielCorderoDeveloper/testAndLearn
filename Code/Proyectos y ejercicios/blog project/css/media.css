@@ -20,13 +20,13 @@
     .profile-main-container .profile-container{
         display: block;
     }
-    .profile-container img {
-
-    }
 }
 
 @media (max-width: 600px){
     .blogs-posts-container .post-container{
         max-width: 95%;
+    }
+    .profile-container img {
+    width: 95%;
     }
 }
