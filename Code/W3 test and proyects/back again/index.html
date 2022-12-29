@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Just a test</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/474x/f9/fe/74/f9fe74d502a928a9d12b6299396c2551.jpg">
 </head>
 <body>
     <bdo dir="rtl">This is a test</bdo>
@@ -17,13 +18,47 @@
     <img src="https://media.wired.com/photos/62b20786600b0ec42e8fde93/master/pass/Apple-Macbook-Pro-M2-Top-Gear.jpg" alt="W3Schools.com" width="960px" height="600px" usemap="#mapmac">
 
     <map name="mapmac">
-        <area shape="rect" coords="0,0,480,600" href="mac1.html" alt="">
-        <area shape="rect" coords="480,0,960,600" href="mac2.html" alt="">
+        <area shape="rect" coords="0,0,480,600" href="mac1.html" onclick="FunctionMac1()">
+        <area shape="rect" coords="480,0,960,600" href="mac2.html" onclick="FunctionMac2()">
     </map>
 
+    <a href="mailto:someone@example.com">Send email to us.</a> <br> <br>
 
-    <a href="mailto:someone@example.com">Send email to us.</a>
+    <table>
+        <tr>
+            <th>Cosas</th>
+            <th>Coste</th>
+            <th>Si o no</th>
+        </tr>
 
+        <tr>
+            <td>Tesla</td>
+            <td>50,000$</td>
+            <td>Si</td>
+        </tr>
+
+        <tr>
+            <td>Ipad</td>
+            <td>1,100$</td>
+            <td>Creo que si</td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br>
+
+
+
+
+
+
+
+<script>
+    function FunctionMac1(){
+        alert("You clicked mac1 :O");
+    }
+    function FunctionMac2(){
+        alert("You clicked mac2 :O");
+    }
+</script>
 
 </body>
 </html>
