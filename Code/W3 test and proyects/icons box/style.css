@@ -1,0 +1,30 @@
+.icon-box{
+    border: 4px solid rgb(134, 30, 30);
+    padding: 20px 60px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.icon-one{
+    position: relative;
+    top: -20%;
+    right: 28%;
+}
+.icon-two{
+    position: relative;
+    top: -20%;
+    left: 103%;
+    size: 200px;
+}
+.icon-three{
+    position: relative;
+    top: 95%;
+    right: 57%;
+}
+.icon-four{
+    position: relative;
+    top: 95%;
+    left: 75%;
+}
