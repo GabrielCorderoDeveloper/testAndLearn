@@ -12,3 +12,8 @@ table, th ,td {
 ol {
     list-style-position: inside ;
 }
+
+.inline li{
+   display: inline;
+   font-variant: small-caps;
+}
