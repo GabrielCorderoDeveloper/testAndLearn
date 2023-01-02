@@ -1,0 +1,14 @@
+section{
+    overflow-x: auto;
+}
+
+div{
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    background-color: black;
+}
+
+div:nth-child(odd){
+    background-color: brown;
+}
