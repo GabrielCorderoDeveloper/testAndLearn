@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn{
+            background-color: rgb(39, 188, 62);
+            font-size: 16px;
+            padding: 16px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            font-weight: 700;
+            border-radius: 8px;
+        }
+
+        .dropdawn{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdawn-content {
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            display: none;
+        }
+
+        .dropdawn-content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdawn-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdawn:hover .dropdawn-content{
+            display: block;
+        }
+
+        .dropdawn:hover .dropbtn{
+            background-color: rgb(92, 184, 106);;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Dropdown Menu</h1>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+
+    <div class="dropdawn">
+        <button class="dropbtn">Dropdawn</button>
+        <div class="dropdawn-content">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </div>
+    </div>
+    
+</body>
+</html>
