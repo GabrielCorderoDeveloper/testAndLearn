@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdawn {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdawn-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        .dropdawn:hover .dropdawn-content{
+            display: block;
+        }
+
+        .desc{
+            padding: 15px;
+            text-align: center;
+        }
+
+        .dropdawn-content img{
+            border-radius: 8px 8px 0px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Dropdawn image</h2>
+    <p>Move the mouse over the image below to open dropdawn content.</p>
+
+    <div class="dropdawn">
+        <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" alt="" width="100" height="50">
+        <div class="dropdawn-content">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature.jpg" alt="" width="450" height="300">
+            <div class="desc">Beautiful landscape</div>
+        </div>
+    </div>
+    
+</body>
+</html>
