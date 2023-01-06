@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My food</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap');
+        html{
+            font-size: 62.5;
+            font-family: 'Karma', serif;
+        }
+        /* header */
+        header{
+            box-sizing: border-box;
+            display: flex;
+            width: 100%;
+            padding: 12px;
+            font-size: 1.5rem;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            justify-content: space-around;
+        }
+        .mini-menu { 
+            font-weight: bold; 
+            font-size: 2rem;
+            background-color: white;
+            border: none;
+        }
+        .my-food{ padding: 0 320px;}
+
+        /* other stuff */
+        .long{
+            width: 80%;
+            border-top: 2px solid #eeeeee;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+        .short{
+            width: 25%;
+            border-top: 2px solid #eeeeee;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        /* cards grid */
+        .image-cards-container{
+            display: grid;
+            grid-template-areas: 
+            "image-card1 image-card2 image-card3 image-card4"
+            "image-card5 image-card6 image-card7 image-card8";
+            gap: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 60px 120px 0px 120px;
+        }
+        .image-cards-container > div {
+            padding-bottom: 50px;
+        } 
+        .image-cards-container img{
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* page-select-container */
+
+        /* about */
+        .about{
+            text-align: center;
+            max-width: 75%;
+            margin: auto;
+            font-size: 1.05rem;
+            margin-bottom: 130px;
+        }
+        .about img{
+            width: 78%;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <button class="mini-menu">&#8801;</button>
+        <div class="my-food">My Food</div>
+        <div class="mail">Mail</div>
+    </header>
+
+    <div class="image-cards-container">
+        <div class="image-card1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card2">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card3">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <h2>Cherries, interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+                What else?</p>
+        </div>
+
+        <div class="image-card4">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card5">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="">
+            <h2>All I Need Is a Popsicle</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card6">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+            <h2>Salmon For Your Skin</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card7">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h2>The Perfect Sandwich, A Real Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="image-card8">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+            <h2>Le French</h2>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+
+    <div class="page-select-container">
+        <div class="page-arrow-1"></div>
+        <div class="page-1">1</div>
+        <div class="page-2">2</div>
+        <div class="page-2">3</div>
+        <div class="page-4">4</div>
+        <div class="page-arrow-2"></div>
+    </div>
+
+    <hr class="long">
+
+    <section class="about">
+        <h1>About Me, The Food Man</h1>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+        <h1>I am Who I Am!</h1>
+        <i>With Passion For Real, Good Food</i>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </section>
+
+    <hr class="long">
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <h2>FOOTER</h2>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+
+            <div class="blog">
+                <h2>BLOG POSTS</h2>
+
+                <img src="" alt="">
+                <h3>Lorem</h3>
+                <p>Sed mattis nunc</p>
+
+                <hr class="short">
+
+                <img src="" alt="">
+                <h3>Ipsum</h3>
+                <p>Praes tinci sed</p>
+            </div>
+
+            <div class="tags">
+                <h2>POPULAR TAGS</h2>
+                <div class="selected">Travel</div>
+                <div>New York</div>
+                <div>Dinner</div>
+                <div>Salmon</div>
+                <div>France</div>
+                <div>Drinks</div>
+                <div>Ideas</div>
+                <div>Flavors</div>
+                <div>Cuisine</div>
+                <div>Chicken</div>
+                <div>Dressing</div>
+                <div>Fried</div>
+                <div>Fish</div>
+                <div>Duck</div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
