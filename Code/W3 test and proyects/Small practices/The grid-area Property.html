@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{ grid-area: header;}
+        .item2{ grid-area: menu;}
+        .item3{ grid-area: main;}
+        .item4{ grid-area: right;}
+        .item5{ grid-area: footer;}
+
+        .grid-container{
+            display: grid;
+            background-color: black;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            width: 80%;
+            margin: auto;
+
+            grid-template-areas: 
+            "header header header header header"
+            "menu main main right right"
+            "menu footer footer footer footer";
+        }
+
+        .grid-container > div{
+            background-color: rgb(228, 72, 0);
+            color: yellow;
+            font-weight: bold;
+            text-align: center;
+            font-size: 25px;
+            padding: 25px 0;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+    <p>This grid layout contains six columns and three rows:</p>
+
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>
