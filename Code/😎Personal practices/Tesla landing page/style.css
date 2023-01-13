@@ -1,0 +1,49 @@
+* {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-container .elements{
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    display: flex;
+    list-style-type: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.elements li, .right li {
+    padding: 20px 10px 10px;
+}
+.left {
+    list-style-type: none;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.right {
+    list-style-type: none;
+    position: absolute;
+    right: 20px;
+
+
+    list-style-type: none;
+    font-weight: 600;
+    font-family: monospace;
+}
+li img{
+    width: 100px;
+    padding: 0;
+}
+
+.background{
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+}
