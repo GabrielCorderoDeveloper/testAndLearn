@@ -47,3 +47,42 @@ li img{
     background-size: cover;
     background-position: 50% 50%;
 }
+
+.mayor-text-container{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.mayor-text-container h1{
+    font-size: 4.5rem;
+}
+.mayor-text-container p{
+    margin-top: 12px;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.button-container{
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.b-first{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 80px;
+}
+.b-second{
+    background-color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 80px;
+}
