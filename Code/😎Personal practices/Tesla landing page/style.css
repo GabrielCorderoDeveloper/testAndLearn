@@ -16,7 +16,7 @@
     font-family: monospace;
 }
 
-.elements li, .right li {
+.elements li {
     padding: 20px 10px 10px;
 }
 .left {
@@ -25,19 +25,14 @@
     left: 20px;
     top: 20px;
 }
-.right {
-    list-style-type: none;
+.shop {
     position: absolute;
     right: 20px;
-
-
-    list-style-type: none;
-    font-weight: 600;
-    font-family: monospace;
 }
+
 li img{
     width: 100px;
-    padding: 0;
+    padding: 0 0 0 30px;
 }
 
 .background{
@@ -64,25 +59,29 @@ li img{
 }
 
 .button-container{
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    margin-top: 400px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 2.5rem;
     font-weight: 900;
     text-decoration: none;
 }
 
+.button-container{
+    backdrop-filter: blur(10px);
+}
+
+.button-container button{
+    opacity: 0.6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 80px;
+    cursor: pointer;
+}
 .b-first{
     background-color: rgb(0, 0, 0);
     color: white;
-    opacity: 0.8;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 80px;
 }
-.b-second{
-    background-color: white;
-    opacity: 0.8;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 80px;
-}
+.b-second{ background-color: white;}
