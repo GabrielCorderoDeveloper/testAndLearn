@@ -9,4 +9,3 @@ var ultimo = frutas.pop("Uvas");
 //agregar primer elemento
 var nuevaLongitud = frutas.unshift("Uvas")
 
-var posicion = frutas.
