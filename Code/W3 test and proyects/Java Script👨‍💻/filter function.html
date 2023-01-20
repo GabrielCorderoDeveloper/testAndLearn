@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JavaScript Array.filter()</h2>
+    <p>Creates a new array with all array elements that passes a test.</p>
+
+    <p id="demo"></p>
+    
+    <script>
+
+        const numbers = [23,93,45,77,99,27,57,28,46,36,68,49,65,12,14,54,67];
+        const over50 = numbers.filter(myFunction);
+
+        document.getElementById("demo").innerHTML = over50;
+
+        function myFunction(value, index ,array){
+            return value > 50;
+        }
+    </script>
+</body>
+</html>
