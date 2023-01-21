@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulacion de DOM basica</h1>
+
+    <p></p>
+
+    <input type="text" placeholder="Escribe sobre mi" value="2047-256">
+
+    <script>
+        let input = document.querySelector("input");
+        let h1 = document.querySelector("h1");
+        let p = document.querySelector("p");
+         console.warn("Este es el valor de input " + input.value);
+
+         //poner atributo y contenido
+         h1.setAttribute("class","rojo");
+
+         //añadir clase
+         h1.classList.add("verde");
+
+         console.log(h1.getAttribute('class'));
+
+         //eliminar clase
+         h1.classList.remove("verde");
+
+         console.log(h1.getAttribute('class'));
+         
+         //crear imagen
+         let links = "https://media.cnn.com/api/v1/images/stellar/prod/230115141052-02-andrew-tate-cars-seized.jpg?c=16x9&q=h_270,w_480,c_fill"
+         let img = document.createElement("img");
+         img.setAttribute("src",links);
+
+         p.append(img);
+    </script>
+</body>
+</html>
