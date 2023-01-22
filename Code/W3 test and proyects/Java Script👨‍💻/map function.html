@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>JavaScript Array.map()</h2>
+    <p>Creates a new array by performing a function on each array element.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //I will duplicate the value of the array using map() function.
+
+        const numbers1 = [45,4,9,16,25];
+        const numbers2 = numbers1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = numbers2;
+
+        function myFunction(value, index, array){
+            return value * 2;
+        }
+    </script>
+</body>
+</html>
