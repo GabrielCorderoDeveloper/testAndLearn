@@ -130,8 +130,8 @@ function movePlayer() {
   if (enemyCollision) {
     levelFail();
   }
-
-  game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y);
+  let playerDraw = game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y);
+ // playerDraw = playerDraw.transform = scaleX(-1);
 }
 
 function levelWin() {
