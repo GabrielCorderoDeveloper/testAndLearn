@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular al altura de un triangulo iscoeles</h1>
+    <p>Porfavor inserta los valores y el calulo se realizara automaticamente</p>
+    <button onclick="valores()">Insertar valores</button>
+
+    <p id="contenido"></p>
+
+    <script>
+
+        function valores() {
+          let lado1 = prompt("Valor de unos de los lados", 60);
+          let base = prompt("Valor de la base", 40);  
+
+          let calculo = Math.sqrt( (lado1 ** 2) - (base ** 2) / 4 );
+          calculo = calculo.toFixed(5);
+          
+          if (lado1 != null && base != null) {
+            document.getElementById("contenido").innerHTML = "La altura del triangolo es: " + calculo;
+          }
+        }
+        
+        
+    </script>
+</body>
+</html>
