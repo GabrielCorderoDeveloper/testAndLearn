@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob constructor</title>
+</head>
+<body>
+    <h1>Using constructor function to build objects</h1>
+    <p id="content"></p>
+
+    <script>
+        //Constructor function for boats
+
+        function Boat(size, color, motor, price) {
+            this.size = size;
+            this.color = color;
+            this.motor = motor;
+            this.price = price;
+        }
+
+        //Creating the boats
+        const boat1 = new Boat("big", "red", "yes", 25000);
+        const boat2 = new Boat("big", "blue", "yes", 30000);
+        const boat3 = new Boat("medium", "white", "yes", 15000);
+        const boat4 = new Boat("small", "brown", "no", 5000);
+        const boat5 = new Boat("medium", "dark brown", "yes", 20000);
+
+        document.getElementById("content").innerHTML = 
+        `Boat propietis: ${boat1.size}, ${boat1.color} , motor: ${boat1.motor}, price: ${boat1.price}$` + "<br>" +
+        `Boat propietis: ${boat2.size}, ${boat2.color} , motor: ${boat2.motor}, price: ${boat2.price}$` + "<br>" +
+        `Boat propietis: ${boat3.size}, ${boat3.color} , motor: ${boat3.motor}, price: ${boat3.price}$` + "<br>" +
+        `Boat propietis: ${boat4.size}, ${boat4.color} , motor: ${boat4.motor}, price: ${boat4.price}$` + "<br>" +
+        `Boat propietis: ${boat5.size}, ${boat5.color} , motor: ${boat5.motor}, price: ${boat5.price}$`;
+    </script>
+</body>
+</html>
