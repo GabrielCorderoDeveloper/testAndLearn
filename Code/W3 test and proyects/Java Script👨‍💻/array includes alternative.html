@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array.include() alterative</h2>
+    <p>The some() method checks if some array values pass a test.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["mango","apple","grape","melon"];
+        let search = "melon";
+        var position = fruits.indexOf(search);
+        myFunction();
+
+        document.getElementById("demo").innerHTML = "Does it contains " + search + "?" + position;
+
+        //if the index of the item is -1 that means it does not exist!
+        function myFunction(){
+            if (position > -1) {
+                position = " yes, it does.";
+            } else {
+                position = " no it does not.";
+            }
+        }
+    </script>
+</body>
+</html>
