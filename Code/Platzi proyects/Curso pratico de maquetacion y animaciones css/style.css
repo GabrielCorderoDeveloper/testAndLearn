@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 :root {
     --primaryColor: rgb(108, 80, 70);
-    --secundaryColor: rgb(146, 192, 202);
-    --extraColor1: rgb(199, 88, 57);
-    --extraColor2: rgb(255, 223, 42);
     --gray: rgb(92, 92, 92);
 }
 
@@ -19,13 +16,26 @@
     width: 100%;
 }
 
+.loader {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+
+    animation: loader 2s linear forwards;
+}
+
 .container {
     position: absolute;
     z-index: 1;
 
     display: grid;
     grid-template-columns: 55% 45%;
-    grid-template-rows: 20% 50% 30%;
+    grid-template-rows: 20% 60% 20%;
     grid-template-areas: 
     "nav     aside"
     "section aside"
@@ -40,6 +50,9 @@ body {
     font-size: 12rem;
     font-family: 'Kaushan Script', cursive;
 
+    background-image: url("https://www.pockettactics.com/wp-content/sites/pockettactics/2021/09/Genshin-Impact-map-8.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .navbar { grid-area: nav; }
@@ -49,7 +62,7 @@ body {
     align-items: center;
     width: 100%;
     padding-left: 40px;
-    font-size: 7rem;
+    font-size: 9rem;
     margin-left: -25px;
 
     animation: 2s navbar 0.8s ease-in-out;
@@ -67,12 +80,20 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    width: 480px;
+    width: 520px;
+    margin-bottom: 18px;
 }
 
 .navbar__content ul li a {
     text-decoration: none;
-    color: var(--secundaryColor);
+    color: var(--primaryColor);
+    text-decoration: underline 0.15em rgba(64, 48, 25, 0);
+    transition: text-decoration-color 400ms, color 400ms;
+}
+
+.navbar__content ul li a:hover {
+    text-decoration-color: rgba(64, 48, 25, 1);
+    color: rgb(64, 48, 25);
 }
 
 .main-content {
@@ -83,8 +104,18 @@ body {
 
     animation: 2s main-content 0.8s ease-in-out;
 }
+
+.main-content div {
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 60px 120px 0 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
 .main-content p:first-child {
-    margin: 50px 0 -8px 80px;
+    margin: 0 0 -8px 80px;
     font-size: 3rem;
     color: var(--gray);
 }
@@ -109,10 +140,12 @@ body {
 
 .side-content p {
     transform: rotate(-90deg);
-    font-size: 6rem;
+    font-size: 5.5rem;
+    color: white;
+    text-shadow: 2px 0px 14px rgba(100,38,185,1);
 
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
 
     animation: 1s side-content-text 2s ease-in-out forwards;
     opacity: 0;
@@ -123,15 +156,11 @@ body {
 }
 .side-content img{
     margin-top: -20px;
-    width: 110%;
-    grid-column: 1 / 7;
+    width: 135%;
+    grid-column: 2 / 7;
     grid-row: 1 / 2;
 
     animation: 2s side-content-img 0.8s ease-in-out forwards;
-}
-.side-content .white {
-    width: 110.5%;
-    filter: brightness(0) invert(1) blur(0px);
 }
 
 @keyframes side-content-img {
@@ -140,10 +169,15 @@ body {
 }
 
 .side-content div {
-    background: var(--primaryColor);
-    grid-column: 4 / 7;
+    /* background: var(--secundaryColor); */
+    grid-column: 5 / 7;
     grid-row: 1 / 2;
     height: 100%;
+
+    background-color:rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .footer {
@@ -151,22 +185,40 @@ body {
     justify-content: space-evenly;
     align-items: flex-end;
 
-    background-color: var(--secundaryColor);
+    background-color: var(--primaryColor);
     border-radius: 0 50px 0 0;
+
+    transform: translateY(0px);
+    animation: footer 1.5s 1.5s ease-in-out forwards;
+}
+@keyframes footer {
+    0% { transform: translateY(300px) ;}
+    100% { transform: translateY(0px) ;}
 }
 
-.loader {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer div:hover img {
+    cursor: pointer;
+    transform: translateY(-20px) scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer div img {
+    width: 160px;
     position: absolute;
-    z-index: 3;
+    bottom: 20px;
 
-    animation: loader 2s linear forwards;
+    transform: translateY(0px) scale(1);
+    transition: transform 0.5s ease-in-out;
 }
+
+.footer div {
+    background: rgb(255, 255, 255);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0px -50px 20px 0;
+}
+
 .loader div {
     background-color: rgb(121, 141, 154);
     width: 20px;
@@ -193,7 +245,77 @@ body {
 }
 @keyframes scaling {
     0% {  opacity: 0; transform: scale(2);}
-    20%, 70% {  opacity: 1; }
+    20%, 60% {  opacity: 1; }
     50% { transform: scale(1);}
-    100% {  opacity: 0; transform: scale(0);}
+    80% { opacity: 0; }
+    100% { transform: scale(0);}
 }
+
+.hidden { display: none; }
+
+.visible { display: grid; }
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
+    position: absolute;
+    z-index: 4;
+
+    place-items: center;
+}
+
+.modal__content {
+    background: white;
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    place-items: center;
+    display: grid;
+}
+
+.modal__content--slider {
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    background: green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  #radio-1:checked ~ .cards #card-1,
+  #radio-2:checked ~ .cards #card-2,
+  #radio-3:checked ~ .cards #card-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+  }
+  #radio-1:checked ~ .cards #card-2,
+  #radio-2:checked ~ .cards #card-3,
+  #radio-3:checked ~ .cards #card-1 {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+  }
+  #radio-1:checked ~ .cards #card-3,
+  #radio-2:checked ~ .cards #card-1,
+  #radio-3:checked ~ .cards #card-2 {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.5;
+    z-index: 0;
+  }
