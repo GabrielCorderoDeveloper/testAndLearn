@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -25,27 +26,28 @@
             </nav>
 
             <section class="main-content">
-                <p>Diseña tu</p>
-                <h1>Personaje propio!</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit eligendi qui repudiandae a necessitatibus amet consequuntur repellendus, natus, quis ad assumenda magni deleniti rerum earum exercitationem perferendis similique nihil eius!</p>
+                <div>
+                    <p>Diseña tu</p>
+                    <h1>Personaje propio!</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit eligendi qui repudiandae a necessitatibus amet consequuntur repellendus, natus, quis ad assumenda magni deleniti rerum earum exercitationem perferendis similique nihil eius!</p>
+                </div>
             </section>
 
             <section class="side-content">
-                <img class="white" src="https://i0.wp.com/traveler.gg/wp-content/uploads/Razor-Banner.png?fit=3240%2C3025&ssl=1" alt="Razor white">
                 <img class="first" src="https://i0.wp.com/traveler.gg/wp-content/uploads/Razor-Banner.png?fit=3240%2C3025&ssl=1" alt="Razor">
                 <p>Razor</p>
                 <div></div>
             </section>
 
             <section class="footer">
-                <div>
-                    <img src="" alt="">
+                <div id="button1">
+                    <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-collei/tray_large.png?642e219324cbbb58ac71adf5a774f6dc" alt="">
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div id="button2">
+                    <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/genshin-impact-cryo-characters/sticker_4.png?6d18f73d0f3e40646870b73acd92e9d8&d=200x200" alt="">
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div id="button3">
+                    <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/inazuma-characters-2-genshin-impact/sticker_16.png?ce23f865e44aad5227a69e8431c8919a" alt="">
                 </div>
             </section>
         </section>
@@ -58,7 +60,30 @@
         </section>
 
         <!-- modal -->
-        <section></section>
+        <section class="modal hidden">
+            <div class="modal__content">
+                <img class="modal__content--close" src="https://img.icons8.com/windows/32/000000/macos-close.png" alt="">
+        
+                <div class="modal__content--slider">
+                    <input type="radio" name="slider-1" id="radio-1" checked>
+                    <input type="radio" name="slider-2" id="radio-2">
+                    <input type="radio" name="slider-3" id="radio-3">
+
+                    <div class="cards">
+                        <label for="radio-1" id="card-1" class="card">
+                            <img src="" alt="">
+                        </label>
+                        <label for="radio-2" id="card-2" class="card">
+                            <img src="" alt="">
+                        </label>
+                        <label for="radio-3" id="card-3" class="card">
+                            <img src="" alt="">
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
