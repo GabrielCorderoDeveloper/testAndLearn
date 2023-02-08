@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+body > p {
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: linear-gradient(to top, orange, rgb(255, 226, 7));
+    border-color: orange;
+    color: rgb(255, 254, 233);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+    border-radius: 15px;
+}
