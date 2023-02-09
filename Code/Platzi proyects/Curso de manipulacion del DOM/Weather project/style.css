@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(223, 252, 255), rgb(68, 183, 255));
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.top_section {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.top_section h1 {
+    margin: 30px 0px 10px 0px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.top_section input {
+    padding: 6px 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: width 0.4s ease-in-out;
+    border: 2px solid white;
+    font-style: italic;
+}
+
+.top_section input:focus {
+    width: 500px;
+    transition: width 0.4s ease-in-out;
+    border: 2px solid white;
+    outline: none;
+    font-style: italic;
+}
+
+.top_section button {
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    background: white;
+    color: rgb(133, 133, 133);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    transition: border 0.2s;
+    margin-bottom: 30px;
+}
+
+.top_section button:hover {
+    border: 2px solid rgb(180, 180, 180);
+}
+
+/* Cards and more styles */
+
+#application {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.532);
+    box-shadow: 3px 3px 10px rgb(61, 127, 158);
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.location {
+    color: black;
+    font-size: 30px;
+    padding-left: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.bubble {
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    background-color: rgb(247, 188, 14);
+    height: 20px;
+    margin-top: 10px;
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.close:hover {
+    filter: invert(75%);
+    cursor: pointer;
+}
+
+.temperature {
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 60px;
+    width: fit-content;
+    position: absolute;
+    left: 15%;
+
+}
+
+.weather_state {
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    left: 18%;
+    margin-top: 115px;
+}
+
+.weather_description {
+    font-size: 24px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 220px;
+}
