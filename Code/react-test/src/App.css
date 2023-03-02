@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+  display: block;
+}
+
+ul {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.btn {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
