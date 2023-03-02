@@ -15,9 +15,11 @@ function App() {
     //main container
     <div className='main d-flex justify-content-center'>
 
-          <div className="main-container container col-lg-8 col-md-10 m-2 mt-5 p-3 rounded-3 bg-light text-center"> 
+          <div className="main-container container col-lg-8 col-11  m-2 mt-5 p-3 rounded-3 bg-light text-center"> 
             <h3 className='pb-2'>My to-do list</h3>
+            <div className='row justify-content-center'>
             <SearchBar/> <SearchButton/>
+            </div>
           </div>
 
     </div>
@@ -25,8 +27,11 @@ function App() {
 }
 
 
-// todo||  fix the input bar
-// todo||  fix the icon
+// todo||  add task list
+//? with the ability to be checked
+
+// todo||  add taks counter
+// todo||  add removed cheched
 
 
 export default App;
