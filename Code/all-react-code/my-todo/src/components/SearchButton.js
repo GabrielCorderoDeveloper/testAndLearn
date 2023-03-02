@@ -1,15 +1,15 @@
 import React from 'react'
-import { PlusCircleFill } from 'react-bootstrap-icons'
+
+import { MdAddCircle } from "react-icons/md";
+
 
 const SearchButton = () => {
   return (
-    <>
-      <button>
-        <i class="bi bi-plus-circle-fill"></i>
-        <PlusCircleFill/>
-      </button>
-    </>
+    <span className='col-1'>
+      <MdAddCircle className='main-button' size="50px"/>
+    </span>
   )
 }
 
 export default SearchButton
+
