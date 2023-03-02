@@ -8,4 +8,17 @@ html body {
 }
 .main-container {
   height: fit-content;
+  position: absolute;
+}
+
+.main-button {
+  transition: 0.3s all ease-in-out;
+  position: relative;
+  bottom: 5px;
+  right: 10px;
+}
+
+.main-button:hover {
+  color: rgb(19, 163, 46);
+  transform: rotate(90deg);
 }
