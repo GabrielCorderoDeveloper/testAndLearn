@@ -76,7 +76,6 @@ function App() {
   return (
     //main container
     <div className='main d-flex justify-content-center'>
-
           <div className="main-container container col-lg-8 col-11 m-2 mt-5 p-3 rounded-3 bg-light text-center"> 
             <h3 className='pb-2'>My to-do list</h3>
             <div className='row justify-content-center mb-1'>
