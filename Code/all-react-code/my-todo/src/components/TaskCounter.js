@@ -3,7 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const TaskCounter = ({ todos }) => {
   let totalTasks = todos.length;
-  let completedTasks = 1;
+  let completedTasks = todos.filter(todo => todo.complete).length;
 
   let now = (Math.floor((completedTasks / totalTasks) * 100));
 
