@@ -1,11 +1,13 @@
 import './App.css';
-import Counter from './components/Counter';
+import Counters from './components/Counters';
 
 function App() {
 
   return (
-    <Counter/>
+    <Counters/>
   );
 }
 
 export default App;
+
+
