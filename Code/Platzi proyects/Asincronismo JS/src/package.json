@@ -1,0 +1,12 @@
+{
+  "name": "asincronismo-js",
+  "version": "1.0.0",
+  "description": "nope",
+  "main": "index.js",
+  "scripts": {
+    "callback": "node src/callback/challenge.js"
+  },
+  "author": "Gabriel Cordero",
+  "license": "ISC",
+  "type": "module"
+}
