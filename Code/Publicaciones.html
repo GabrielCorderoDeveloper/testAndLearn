@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel_coder47</title>
+	<title>Ejemplo de página con barra de navegación</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 20px;
+		}
+		nav a {
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0 10px;
+			text-decoration: none;
+			transition: color 0.2s ease-in-out;
+		}
+		nav a:hover {
+			color: #ffcc00;
+		}
+		section {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
+			font-weight: bold;
+		}
+		#section1 {
+			background-color: #ffcc00;
+		}
+		#section2 {
+			background-color: #33cc33;
+		}
+		#section3 {
+			background-color: #3366cc;
+		}
+
+        html {
+            scroll-behavior: smooth;
+        }
+	</style>
 </head>
 <body>
-    
+	<header>
+		<h1>Example of page with navigation bar</h1>
+		<nav>
+			<a href="#section1">Section 1</a>
+			<a href="#section2">Section 2</a>
+			<a href="#section3">Section 3</a>
+		</nav>
+	</header>
+	<section id="section1">
+		Section 1
+	</section>
+	<section id="section2">
+		Section 2
+	</section>
+	<section id="section3">
+		Section 3
+	</section>
 </body>
 </html>
