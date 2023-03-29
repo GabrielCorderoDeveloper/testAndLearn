@@ -1,17 +1,11 @@
-import ListGroup from "./components/ListGroup/ListGroup";
-import { BsFillCalendarFill } from 'react-icons/bs'
-import Like from './components/Like/Like'
+import Expandabletext from "./components/Expandabletext"
+import Form from './components/Form'
 
 function App() {
-  const items: string[] = ['New York', 'San Francisco', 'Tokyo', 'London'];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  }
 
   return (
     <>
-      <Like onClick={() => console.log('clicked')}/>
+      <Form />
     </>
   )
 }
