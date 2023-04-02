@@ -10,10 +10,7 @@ function App() {
 
   return (
     <>
-      {/* <ListGroup items={items} heading={'Cities'} onSelectItem={handleSelectItem}/> */}
-      <Alerts>
-        <span>Hello New Life!</span>
-      </Alerts>
+      <ListGroup items={items} heading={'Cities'} onSelectItem={handleSelectItem}/>
     </>
   )
 }
