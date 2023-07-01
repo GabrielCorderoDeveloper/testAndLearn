@@ -39,3 +39,18 @@ function updateTimer() {
   
 }
 
+
+
+
+
+
+
+function esLetra(char) {
+  return /^[A-Za-z]$/.test(char);
+}
+
+
+console.log(esLetra('a')); // true
+console.log(esLetra('5')); // false
+console.log(esLetra('A')); // true
+console.log(esLetra('#')); // false
