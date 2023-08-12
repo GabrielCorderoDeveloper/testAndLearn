@@ -55,6 +55,9 @@
 
 .nose {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100px;
     height: 60px;
     bottom: 30px;
@@ -64,4 +67,11 @@
     border: 2px solid black;
     border-radius: 35%;
     background-color: #f57187;
+}
+
+.nostril {
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: black;
 }
