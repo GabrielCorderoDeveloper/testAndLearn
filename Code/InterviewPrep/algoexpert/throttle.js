@@ -1,3 +1,5 @@
 function throttle(callback, delay) {
-    // Write your code here.
+    const throttledFunction = function(...args) {
+        
+    }
   }
