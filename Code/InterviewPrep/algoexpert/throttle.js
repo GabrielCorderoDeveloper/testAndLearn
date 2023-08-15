@@ -18,4 +18,10 @@ function throttle(callback, delay) {
             }, daelayRemaining);
         }
     }
+
+    throttledFunction.cancel = function() {
+        clearTimeout(timerID);
+    };
+
+    return throttledFunction;
   }
