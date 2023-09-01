@@ -40,5 +40,14 @@ async function loadFavoritesMichis() {
   }
 }
 
+async function saveFavouriteeMichis() {
+  const rest = await fetch(API_URL_FAVORITES, {
+    method: 'POST',
+    header: {
+      
+    }
+  })
+}
+
 loadRandomMichis();
 loadFavoritesMichis();
